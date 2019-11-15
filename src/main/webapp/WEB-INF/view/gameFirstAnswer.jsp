@@ -8,7 +8,6 @@ Przygotuj się na pierwsze pytanie:
 
 <table>
     <tr>
-<%--        <c:forEach var="q" items="${question}"> </c:forEach>--%>
         <th>Pytanie za 500 zł:</th>
     </tr>
     <table border="1">

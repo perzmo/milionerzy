@@ -22,7 +22,7 @@ public class AppController {
     @GetMapping("/gameFirstAnswer")
     public ModelAndView gamePage(){
         ModelAndView modelAndView = new ModelAndView("gameFirstAnswer");
-        modelAndView.addObject("question",questionService.getFirstQuestion());
+        //modelAndView.addObject("question",questionService.getFirstQuestion());
         return modelAndView;
     }
 
