@@ -13,15 +13,15 @@ public class Question {
     @GeneratedValue(generator = "questionSeq")
     @SequenceGenerator(name = "questionSeq", sequenceName = "question_seq", allocationSize = 1)
     private int id;
-    private String contents;
+    private String content;
     private String a;
     private String b;
     private String c;
     private String d;
     private String correct;
 
-    public Question(String contents, String a, String b, String c, String d, String correct) {
-        this.contents = contents;
+    public Question(String content, String a, String b, String c, String d, String correct) {
+        this.content = content;
         this.a = a;
         this.b = b;
         this.c = c;
@@ -40,12 +40,12 @@ public class Question {
         this.id = id;
     }
 
-    public String getContents() {
-        return contents;
+    public String getContent() {
+        return content;
     }
 
-    public void setContents(String contents) {
-        this.contents = contents;
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public String getA() {
