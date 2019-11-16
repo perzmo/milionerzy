@@ -1,6 +1,6 @@
 package pl.pgosciniak.milionerzy.controller;
 
-import com.sun.org.apache.xpath.internal.operations.Mod;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,6 +27,7 @@ public class AppController {
         modelAndView.addObject("question",questionService.getFirstQuestion());
         return modelAndView;
     }
+
     @GetMapping("/gameSecondAnswer")
     public ModelAndView gamePage2(){
         ModelAndView modelAndView = new ModelAndView("gameSecondAnswer");
@@ -39,4 +40,73 @@ public class AppController {
         return modelAndView;
     }
 
+    @GetMapping("/gameThirdAnswer")
+    public ModelAndView gamePage3(){
+        ModelAndView modelAndView = new ModelAndView("gameThirdAnswer");
+        modelAndView.addObject("question",questionService.getFirstQuestion());
+        return modelAndView;
+    }
+
+    @GetMapping("/gameFourthAnswer")
+    public ModelAndView gamePage4(){
+        ModelAndView modelAndView = new ModelAndView("gameFourthAnswer");
+        modelAndView.addObject("question",questionService.getFirstQuestion());
+        return modelAndView;
+    }
+
+    @GetMapping("/gameFifthAnswer")
+    public ModelAndView gamePage5(){
+        ModelAndView modelAndView = new ModelAndView("gameFifthAnswer");
+        modelAndView.addObject("question",questionService.getFirstQuestion());
+        return modelAndView;
+    }
+
+    @GetMapping("/gameSixthAnswer")
+    public ModelAndView gamePage6(){
+        ModelAndView modelAndView = new ModelAndView("gameSixthAnswer");
+        modelAndView.addObject("question",questionService.getFirstQuestion());
+        return modelAndView;
+    }
+
+    @GetMapping("/gameSeventhAnswer")
+    public ModelAndView gamePage7(){
+        ModelAndView modelAndView = new ModelAndView("gameSeventhAnswer");
+        modelAndView.addObject("question",questionService.getFirstQuestion());
+        return modelAndView;
+    }
+
+    @GetMapping("/gameEighthAnswer")
+    public ModelAndView gamePage8(){
+        ModelAndView modelAndView = new ModelAndView("gameEighthAnswer");
+        modelAndView.addObject("question",questionService.getFirstQuestion());
+        return modelAndView;
+    }
+
+    @GetMapping("/gameNinthAnswer")
+    public ModelAndView gamePage9(){
+        ModelAndView modelAndView = new ModelAndView("gameNinthAnswer");
+        modelAndView.addObject("question",questionService.getFirstQuestion());
+        return modelAndView;
+    }
+
+    @GetMapping("/gameTenthAnswer")
+    public ModelAndView gamePage10(){
+        ModelAndView modelAndView = new ModelAndView("gameTenthAnswer");
+        modelAndView.addObject("question",questionService.getFirstQuestion());
+        return modelAndView;
+    }
+
+    @GetMapping("/gameEleventhAnswer")
+    public ModelAndView gamePage11(){
+        ModelAndView modelAndView = new ModelAndView("gameEleventhAnswer");
+        modelAndView.addObject("question",questionService.getFirstQuestion());
+        return modelAndView;
+    }
+
+    @GetMapping("/gameTwelfthAnswer")
+    public ModelAndView gamePage12(){
+        ModelAndView modelAndView = new ModelAndView("gameTwelfthAnswer");
+        modelAndView.addObject("question",questionService.getFirstQuestion());
+        return modelAndView;
+    }
 }
