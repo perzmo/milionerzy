@@ -6,6 +6,7 @@ import pl.pgosciniak.milionerzy.repository.QuestionRepository;
 
 
 import java.util.List;
+import java.util.Random;
 
 @Service
 public class QuestionService {
@@ -17,7 +18,10 @@ public class QuestionService {
 
     public Question getFirstQuestion(){
         List<Question> questionList = questionRepository.findAll();
-        return  questionList.get(1);
+        return  questionList.get(generateRandomNumber());
+    }
+    private int generateRandomNumber() {
+        return new Random().nextInt(5);
     }
 
 
