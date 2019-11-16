@@ -5,4 +5,5 @@ import pl.pgosciniak.milionerzy.model.Question;
 
 
 public interface QuestionRepository extends JpaRepository<Question, Integer> {
+
 }
