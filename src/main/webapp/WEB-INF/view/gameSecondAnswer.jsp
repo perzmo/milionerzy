@@ -5,6 +5,16 @@
 <html>
 
 <body>
+
+<script>
+    function callJavascript(e) {
+        let value = document.getElementById(e.target.id).value;
+        if (value === "${question.correct}") {
+            location.href = "/gameThirdAnswer"
+        } else
+            location.href = "/finish"
+    }
+</script>
 <h4>Pytanie za 1000:</h4>
 <table>
     <tr>
@@ -15,21 +25,21 @@
         <tr>
             <th>
                 ${question.a}
-                <button id="${question.a}">A</button>
+                <button id="a" value="${question.a}" onclick="callJavascript(event)">A</button>
             </th>
             <th>
                 ${question.b}
-                <button id="${question.b}">B</button>
+                <button id="b" value="${question.b}" onclick="callJavascript(event)">B</button>
             </th>
         </tr>
         <tr>
             <th>
                 ${question.c}
-                <button id="${question.c}">C</button>
+                <button id="c" value="${question.c}" onclick="callJavascript(event)">C</button>
             </th>
             <th>
                 ${question.d}
-                <button id="${question.d}">D</button>
+                <button id="d" value="${question.d}" onclick="callJavascript(event)">D</button>
             </th>
         </tr>
     </table>
@@ -38,7 +48,7 @@
 <table align="right" border="1">
     <th>Kwota</th>
     <tr>
-        <th bgcolor="yellow">1 000 000</th>
+        <th>1 000 000</th>
     </tr>
     <tr>
         <th>500 000</th>
@@ -68,7 +78,7 @@
         <th>2000</th>
     </tr>
     <tr>
-        <th>1000</th>
+        <th bgcolor="yellow">1000</th>
     </tr>
     <tr>
         <th><s>500</s></th>
@@ -77,5 +87,4 @@
 
 
 </body>
-
 </html>

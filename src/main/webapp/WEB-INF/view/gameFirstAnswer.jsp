@@ -5,6 +5,17 @@
 <html>
 
 <body>
+
+<script>
+    function callJavascript(e) {
+        let value = document.getElementById(e.target.id).value;
+        if (value === "${question.correct}") {
+            location.href = "/gameSecondAnswer"
+        }else
+            location.href = "/finish"
+    }
+</script>
+<img src="\pages\hubert.jpg" width="200" height="200">
 <h3>Nazywam się Hubert i zadam Ci kilka pytań. Już niedługo możesz zostać milionerem! :)</h3>
 
 <h4>Pierwsze pytanie za 500:</h4>
@@ -17,21 +28,21 @@
         <tr>
             <th>
                 ${question.a}
-                <button>A</button>
+                <button id="a" value="${question.a}" onclick="callJavascript(event)">A</button>
             </th>
             <th>
                 ${question.b}
-                <button>B</button>
+                <button id="b" value="${question.b}" onclick="callJavascript(event)">B</button>
             </th>
         </tr>
         <tr>
             <th>
                 ${question.c}
-                <button>C</button>
+                <button id="c" value="${question.c}" onclick="callJavascript(event)">C</button>
             </th>
             <th>
                 ${question.d}
-                <button>D</button>
+                <button id="d" value="${question.d}" onclick="callJavascript(event)">D</button>
             </th>
         </tr>
     </table>
@@ -40,7 +51,7 @@
 <table align="right" border="1">
     <th>Kwota</th>
     <tr>
-        <th bgcolor="yellow">1 000 000</th>
+        <th>1 000 000</th>
     </tr>
     <tr>
         <th>500 000</th>
@@ -73,7 +84,7 @@
         <th>1000</th>
     </tr>
     <tr>
-        <th>500</th>
+        <th bgcolor="yellow">500</th>
     </tr>
 </table>
 
