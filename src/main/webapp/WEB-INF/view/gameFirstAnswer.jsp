@@ -15,6 +15,7 @@
             location.href = "/finish"
     }
 </script>
+<img src="\pages\hubert.jpg" width="200" height="200">
 <h3>Nazywam się Hubert i zadam Ci kilka pytań. Już niedługo możesz zostać milionerem! :)</h3>
 
 <h4>Pierwsze pytanie za 500:</h4>
