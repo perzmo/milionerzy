@@ -33,5 +33,10 @@ public class AppController {
         modelAndView.addObject("question",questionService.getFirstQuestion());
         return modelAndView;
     }
+    @GetMapping("/finish")
+    public ModelAndView finishPage(){
+        ModelAndView modelAndView = new ModelAndView("finish");
+        return modelAndView;
+    }
 
 }
