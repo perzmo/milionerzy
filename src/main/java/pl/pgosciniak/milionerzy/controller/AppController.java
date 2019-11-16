@@ -1,5 +1,6 @@
 package pl.pgosciniak.milionerzy.controller;
 
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +24,12 @@ public class AppController {
     @GetMapping("/gameFirstAnswer")
     public ModelAndView gamePage(){
         ModelAndView modelAndView = new ModelAndView("gameFirstAnswer");
+        modelAndView.addObject("question",questionService.getFirstQuestion());
+        return modelAndView;
+    }
+    @GetMapping("/gameSecondAnswer")
+    public ModelAndView gamePage2(){
+        ModelAndView modelAndView = new ModelAndView("gameSecondAnswer");
         modelAndView.addObject("question",questionService.getFirstQuestion());
         return modelAndView;
     }
