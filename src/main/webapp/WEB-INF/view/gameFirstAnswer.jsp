@@ -50,7 +50,7 @@
 <table align="right" border="1">
     <th>Kwota</th>
     <tr>
-        <th bgcolor="yellow">1 000 000</th>
+        <th>1 000 000</th>
     </tr>
     <tr>
         <th>500 000</th>
@@ -83,7 +83,7 @@
         <th>1000</th>
     </tr>
     <tr>
-        <th>500</th>
+        <th bgcolor="yellow">500</th>
     </tr>
 </table>
 
