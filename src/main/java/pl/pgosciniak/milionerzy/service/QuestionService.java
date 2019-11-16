@@ -4,22 +4,23 @@ import org.springframework.stereotype.Service;
 import pl.pgosciniak.milionerzy.model.Question;
 import pl.pgosciniak.milionerzy.repository.QuestionRepository;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 @Service
 public class QuestionService {
     private final QuestionRepository questionRepository;
+    private List listOfNumbers = new ArrayList();
 
     public QuestionService(QuestionRepository questionRepository) {
         this.questionRepository = questionRepository;
     }
 
-    public List<Question> getFirstQuestion(){
+    public Question getFirstQuestion(){
         List<Question> questionList = questionRepository.findAll();
-        return (List<Question>) questionList.get(1);
+        return questionList.get(1);
     }
 
-
+    public int generateRandomNumber() {
+        return new Random(5 + 1).nextInt();
+    }
 }
