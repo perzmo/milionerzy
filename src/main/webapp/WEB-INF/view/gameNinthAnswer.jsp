@@ -12,21 +12,15 @@
     function callJavascript(e) {
         let value = document.getElementById(e.target.id).value;
         if (value === "${question.correct}") {
-            location.href = "/gameSecondAnswer"
-        } else {
-            let value = document.getElementById("500").value;
+            location.href = "/gameTenthAnswer"
+        } else{
+            let value = document.getElementById("125000").value;
             alert("Wygrałeś:" + value)
             location.href = "/finish"
         }
     }
 </script>
-<div class="w3-third">
-    <img src="\pages\hubert.jpg" class="w3-round" style="padding: 5px" width="550" height="600">
-</div>
-<div class="w3-twothird w3-container">
-    <h4 align="center">Nazywam się Hubert i zadam Ci kilka pytań. Już niedługo możesz zostać milionerem! :)</h4>
-    <h5 align="center">Pierwsze pytanie za 500:</h5>
-</div>
+<h4 align="center">Pytanie za 125 000:</h4>
 <table align="center">
     <tr>
         <th>
@@ -81,39 +75,37 @@
                 <td>250 000</td>
             </tr>
             <tr>
-                <td>125 000</td>
-            </tr>
-            <tr>
-                <td>75 000</td>
-            </tr>
-            <tr>
-                <td>40 000</td>
-            </tr>
-            <tr>
-                <td>20 000</td>
-            </tr>
-            <tr>
-                <td>10 000</td>
-            </tr>
-            <tr>
-                <td>5 000</td>
-            </tr>
-            <tr>
-                <td>2 000</td>
-            </tr>
-            <tr>
-                <td>1 000</td>
-            </tr>
-            <tr>
                 <td bgcolor="yellow">
-                    <param id="500" value="500">
-                    500</param> </td>
+                    <param id="125000" value="125000">
+                    125 000 </param> </td>
+            </tr>
+            <tr>
+                <td><s> 75 000 </s></td>
+            </tr>
+            <tr>
+                <td><s> 40 000 </s></td>
+            </tr>
+            <tr>
+                <td><s> 20 000 </s></td>
+            </tr>
+            <tr>
+                <td><s>10 000 </s></td>
+            </tr>
+            <tr>
+                <td><s>5 000</s></td>
+            </tr>
+            <tr>
+                <td><s>2 000</s></td>
+            </tr>
+            <tr>
+                <td><s>1 000</s></td>
+            </tr>
+            <tr>
+                <td><s>500</s></td>
             </tr>
         </table>
     </div>
 </div>
 
-
 </body>
-
 </html>
