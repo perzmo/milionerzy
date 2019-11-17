@@ -2,89 +2,110 @@
 <%@ page import="pl.pgosciniak.milionerzy.service.QuestionService" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html" pageEncoding="UTF-8" language="java" %>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="\css\style.css">
 <html>
 
-<body>
+<body class="background">
+
 <script>
     function callJavascript(e) {
         let value = document.getElementById(e.target.id).value;
         if (value === "${question.correct}") {
             location.href = "/gameSixthAnswer"
-        } else
+        } else{
+            let value = document.getElementById("10000").value;
+            alert("Wygrałeś:" + value)
             location.href = "/finish"
+        }
     }
 </script>
-<h4>Pytanie za 10 000:</h4>
-<table>
+<h4 align="center">Pytanie za 10 000:</h4>
+<table align="center">
     <tr>
         <th>
             ${question.contents}</th>
     </tr>
-    <table border="1">
+    <table border="1" align="center">
         <tr>
             <th>
                 ${question.a}
-                <button id="a" value="${question.a}" onclick="callJavascript(event)">A</button>
+                <button class="w3-button w3-black w3-round-xxlarge" id="a" value="${question.a}"
+                        onclick="callJavascript(event)">A
+                </button>
             </th>
             <th>
                 ${question.b}
-                <button id="b" value="${question.b}" onclick="callJavascript(event)">B</button>
+                <button class="w3-button w3-black w3-round-xxlarge" id="b" value="${question.b}"
+                        onclick="callJavascript(event)">B
+                </button>
             </th>
         </tr>
         <tr>
             <th>
                 ${question.c}
-                <button id="c" value="${question.c}" onclick="callJavascript(event)">C</button>
+                <button class="w3-button w3-black w3-round-xxlarge" id="c" value="${question.c}"
+                        onclick="callJavascript(event)">C
+                </button>
             </th>
             <th>
                 ${question.d}
-                <button id="d" value="${question.d}" onclick="callJavascript(event)">D</button>
+                <button class="w3-button w3-black w3-round-xxlarge" id="d" value="${question.d}"
+                        onclick="callJavascript(event)">D
+                </button>
             </th>
         </tr>
     </table>
 </table>
-
-<table align="right" border="1">
-    <th>Kwota</th>
-    <tr>
-        <th>1 000 000</th>
-    </tr>
-    <tr>
-        <th>500 000</th>
-    </tr>
-    <tr>
-        <th>250 000</th>
-    </tr>
-    <tr>
-        <th>125 000</th>
-    </tr>
-    <tr>
-        <th>75 000</th>
-    </tr>
-    <tr>
-        <th>40 000</th>
-    </tr>
-    <tr>
-        <th>20 000</th>
-    </tr>
-    <tr>
-        <th bgcolor="yellow">10 000</th>
-    </tr>
-    <tr>
-        <th><s>5000</s></th>
-    </tr>
-    <tr>
-        <th><s>2000</s></th>
-    </tr>
-    <tr>
-        <th><s>1000</s></th>
-    </tr>
-    <tr>
-        <th><s>500</s></th>
-    </tr>
-</table>
-
+<div class="w3-padding w3-display-right">
+    <div class="w3-container">
+        <table class="w3-table-all w3-hoverable">
+            <thead>
+            <tr class="w3-light-grey">
+                <th>Kwota</th>
+            </tr>
+            </thead>
+            <tr>
+                <td>1 000 000</td>
+            </tr>
+            <tr>
+                <td>500 000</td>
+            </tr>
+            <tr>
+                <td>250 000</td>
+            </tr>
+            <tr>
+                <td>125 000</td>
+            </tr>
+            <tr>
+                <td>75 000</td>
+            </tr>
+            <tr>
+                <td>40 000</td>
+            </tr>
+            <tr>
+                <td>20 000</td>
+            </tr>
+            <tr>
+                <td bgcolor="yellow">
+                    <param id="10000" value="10000">
+                    10000 </param> </td>
+            </tr>
+            <tr>
+                <td><s>5000</s></td>
+            </tr>
+            <tr>
+                <td><s>2000</s></td>
+            </tr>
+            <tr>
+                <td><s>1000</s></td>
+            </tr>
+            <tr>
+                <td><s>500</s></td>
+            </tr>
+        </table>
+    </div>
+</div>
 
 </body>
-
 </html>
