@@ -8,6 +8,6 @@ INSERT INTO question (id,contents,a,b,c,d,correct) values (nextval('question_seq
 INSERT INTO question (id,contents,a,b,c,d,correct) values (nextval('question_seq'),'Kto na ingrzyskach olimpijkich w Pjongczangu nie mógł startować pod flagą własnego kraju?','Polska','Rosja','USA','Kambodża','Rosja');
 INSERT INTO question (id,contents,a,b,c,d,correct) values (nextval('question_seq'),'Trzy z czterech nazw odnoszą się do tego samego oceanu. Którego to nie dotyczy?','Spokojny','Pacyfik','Ocean Wielki','Atlantyk','Atlantyk');
 INSERT INTO question (id,contents,a,b,c,d,correct) values (nextval('question_seq'),'Jak to dalej szło? "Góralu, czy ci nie żal..."?','na wódkę wydać szmal','porzucić lasów i hal','odechodzić od stron ojczystych','regli zostawiać lesistych','odechodzić od stron ojczystych');
-INSERT INTO question (id,contents,a,b,c,d,correct) values (nextval('question_seq'),'Ile rodzonych miała macocha Kopciuszka w baśni braci Grim?','trzy','pięć','dwie','cztery','dwie');
+INSERT INTO question (id,contents,a,b,c,d,correct) values (nextval('question_seq'),'Ile rodzonych córek miała macocha Kopciuszka w baśni braci Grim?','trzy','pięć','dwie','cztery','dwie');
 INSERT INTO question (id,contents,a,b,c,d,correct) values (nextval('question_seq'),'"Musisz przyznać, że jak tatuś zrobi dziubek, to nie ma mhm, mhm we wsi" - mówi Adaś Miauczyński:','demonstrując selfie','garnirując drób','poprawiając synowi kaptur','składając origami','poprawiając synowi kaptur');
 commit;

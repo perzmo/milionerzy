@@ -13,19 +13,22 @@ import java.util.Set;
 @Service
 public class QuestionService {
     private final QuestionRepository questionRepository;
-    private Set<Integer> numbersList = new HashSet<>();
+    private Set<Integer> numbersSet = new HashSet<>();
 
     public QuestionService(QuestionRepository questionRepository) {
         this.questionRepository = questionRepository;
     }
 
-    public Question getFirstQuestion(){
+    public Question getOneQuestion(){
         List<Question> questionList = questionRepository.findAll();
         int randomNumber = generateRandomNumber();
-        while (numbersList.contains(randomNumber)){
+        while (numbersSet.contains(randomNumber)){
             randomNumber = generateRandomNumber();
+            if (numbersSet.size() == 12) {
+                numbersSet.removeAll(numbersSet);
+            }
         }
-        numbersList.add(randomNumber);
+        numbersSet.add(randomNumber);
         return  questionList.get(randomNumber);
     }
 
