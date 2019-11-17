@@ -90,15 +90,15 @@
                 <td>10 000</td>
             </tr>
             <tr>
-                <td>5000</td>
+                <td>5 000</td>
             </tr>
             <tr>
-                <td>2000</td>
+                <td>2 000</td>
             </tr>
             <tr>
                 <td bgcolor="yellow">
                     <param id="1000" value="1000">
-                    1000 </param> </td>
+                    1 000 </param> </td>
             </tr>
             <tr>
                 <td><s>500</s></td>

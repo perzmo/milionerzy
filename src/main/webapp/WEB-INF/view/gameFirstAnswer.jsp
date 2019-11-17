@@ -96,13 +96,13 @@
                 <td>10 000</td>
             </tr>
             <tr>
-                <td>5000</td>
+                <td>5 000</td>
             </tr>
             <tr>
-                <td>2000</td>
+                <td>2 000</td>
             </tr>
             <tr>
-                <td>1000</td>
+                <td>1 000</td>
             </tr>
             <tr>
                 <td bgcolor="yellow">

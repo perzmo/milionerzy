@@ -77,28 +77,28 @@
             <tr>
                 <td bgcolor="yellow">
                     <param id="125000" value="125000">
-                    125000 </param> </td>
+                    125 000 </param> </td>
             </tr>
             <tr>
-                <td><s> 75000 </s></td>
+                <td><s> 75 000 </s></td>
             </tr>
             <tr>
-                <td><s> 40000 </s></td>
+                <td><s> 40 000 </s></td>
             </tr>
             <tr>
-                <td><s> 20000 </s></td>
+                <td><s> 20 000 </s></td>
             </tr>
             <tr>
-                <td><s>10000 </s></td>
+                <td><s>10 000 </s></td>
             </tr>
             <tr>
-                <td><s>5000</s></td>
+                <td><s>5 000</s></td>
             </tr>
             <tr>
-                <td><s>2000</s></td>
+                <td><s>2 000</s></td>
             </tr>
             <tr>
-                <td><s>1000</s></td>
+                <td><s>1 000</s></td>
             </tr>
             <tr>
                 <td><s>500</s></td>

@@ -19,7 +19,7 @@ public class QuestionService {
         this.questionRepository = questionRepository;
     }
 
-    public Question getFirstQuestion(){
+    public Question getQuestion(){
         List<Question> questionList = questionRepository.findAll();
         int randomNumber = generateRandomNumber();
         while (numbersList.contains(randomNumber)){
