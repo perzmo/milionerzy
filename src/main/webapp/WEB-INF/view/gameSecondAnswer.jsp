@@ -10,15 +10,12 @@
     function callJavascript(e) {
         let value = document.getElementById(e.target.id).value;
         if (value === "${question.correct}") {
-            location.href = "/gameSecondAnswer"
-        }else
+            location.href = "/gameThirdAnswer"
+        } else
             location.href = "/finish"
     }
 </script>
-<img src="\pages\hubert.jpg" width="200" height="200">
-<h3>Nazywam się Hubert i zadam Ci kilka pytań. Już niedługo możesz zostać milionerem! :)</h3>
-
-<h4>Pierwsze pytanie za 500:</h4>
+<h4>Pytanie za 1000:</h4>
 <table>
     <tr>
         <th>
@@ -81,14 +78,13 @@
         <th>2000</th>
     </tr>
     <tr>
-        <th>1000</th>
+        <th bgcolor="yellow">1000</th>
     </tr>
     <tr>
-        <th bgcolor="yellow">500</th>
+        <th><s>500</s></th>
     </tr>
 </table>
 
 
 </body>
-
 </html>

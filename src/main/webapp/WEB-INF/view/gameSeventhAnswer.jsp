@@ -5,20 +5,16 @@
 <html>
 
 <body>
-
 <script>
     function callJavascript(e) {
         let value = document.getElementById(e.target.id).value;
         if (value === "${question.correct}") {
-            location.href = "/gameSecondAnswer"
-        }else
+            location.href = "/gameEighthAnswer"
+        } else
             location.href = "/finish"
     }
 </script>
-<img src="\pages\hubert.jpg" width="200" height="200">
-<h3>Nazywam się Hubert i zadam Ci kilka pytań. Już niedługo możesz zostać milionerem! :)</h3>
-
-<h4>Pierwsze pytanie za 500:</h4>
+<h4>Pytanie za 40 000:</h4>
 <table>
     <tr>
         <th>
@@ -66,25 +62,25 @@
         <th>75 000</th>
     </tr>
     <tr>
-        <th>40 000</th>
+        <th bgcolor="yellow">40 000</th>
     </tr>
     <tr>
-        <th>20 000</th>
+        <th><s>20 000</s></th>
     </tr>
     <tr>
-        <th>10 000</th>
+        <th><s>10 000</s></th>
     </tr>
     <tr>
-        <th>5000</th>
+        <th><s>5000</s></th>
     </tr>
     <tr>
-        <th>2000</th>
+        <th><s>2000</s></th>
     </tr>
     <tr>
-        <th>1000</th>
+        <th><s>1000</s></th>
     </tr>
     <tr>
-        <th bgcolor="yellow">500</th>
+        <th><s>500</s></th>
     </tr>
 </table>
 
